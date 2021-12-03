@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Main\Day3.cs" />
     <Compile Include="Main\Day2.cs" />
     <Compile Include="Main\Day1.cs" />
     <Compile Include="Main\Utils.cs" />
@@ -58,6 +59,8 @@
     <EmbeddedResource Include="Resources\d3\input.dat" />
     <EmbeddedResource Include="Resources\d\example.dat" />
     <EmbeddedResource Include="Resources\d\input.dat" />
+    <EmbeddedResource Include="Resources\d4\example.dat" />
+    <EmbeddedResource Include="Resources\d4\input.dat" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -35,6 +35,8 @@ namespace AOC2021.Main {
 			return output;
 		}
 		public static List<string> StringToRows(this string data ) {
+			//trim newline at the end
+			data = data.Trim();
 			return data.Split(
 				new string[] { "\r\n", "\r", "\n" },
 				StringSplitOptions.None
