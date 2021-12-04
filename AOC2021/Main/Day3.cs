@@ -41,7 +41,6 @@ namespace AOC2021 {
 				dataGrid[i] = new int[dataList[0].Length];
 			}
 
-			//process data so columns and rows are flipped
 			for (int i = 0; i < dataList.Count; i++) {
 				int idx = 0;
 				foreach (var col in dataList[i]) {

@@ -11,12 +11,7 @@ namespace AOC2021 {
 		}
 
 		public static List<int> ParseDepthData(string data) {
-			List<string> rows = data.StringToRows();
-			return rows
-				.Select(s => Int32.TryParse(s, out int n) ? n : (int?)null)
-				.Where(n => n.HasValue)
-				.Select(n => n.Value)
-				.ToList();
+			return data.StringToRows().StringToInts();
 		}
 		public static int GetDepthIncreases(string data) {
 			int depth = Int32.MaxValue;

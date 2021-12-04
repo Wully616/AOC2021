@@ -65,12 +65,31 @@ namespace AOC2021Tests {
 		public void D4P1() {
 			string example = Utils.ReadResource("Resources.d4.example.dat");
 			string input = Utils.ReadResource("Resources.d4.input.dat");
+
+			Assert.AreEqual(4512, Day4.PlayBingo(example, true));
+
+			Console.WriteLine(Day4.PlayBingo(input, true));
 		}
 
 		[TestMethod]
 		public void D4P2() {
 			string example = Utils.ReadResource("Resources.d4.example.dat");
 			string input = Utils.ReadResource("Resources.d4.input.dat");
+			Assert.AreEqual(1924, Day4.PlayBingo(example, false));
+
+			Console.WriteLine(Day4.PlayBingo(input, false));
+		}
+
+		[TestMethod]
+		public void D5P1() {
+			string example = Utils.ReadResource("Resources.d5.example.dat");
+			string input = Utils.ReadResource("Resources.d5.input.dat");
+		}
+
+		[TestMethod]
+		public void D5P2() {
+			string example = Utils.ReadResource("Resources.d5.example.dat");
+			string input = Utils.ReadResource("Resources.d5.input.dat");
 		}
 	}
 }

@@ -42,5 +42,21 @@ namespace AOC2021.Main {
 				StringSplitOptions.None
 			).ToList();
 		}
+		public static List<string> SplitByEmptyLine( this string data ) {
+			//trim newline at the end
+			data = data.Trim();
+			return data.Split(
+				new string[] { "\r\n\r\n", "\r\r", "\n\n" },
+				StringSplitOptions.RemoveEmptyEntries
+			).ToList();
+		}
+
+		public static List<int> StringToInts(this List<string> data) {
+			return data
+				.Select(s => Int32.TryParse(s, out int n) ? n : (int?)null)
+				.Where(n => n.HasValue)
+				.Select(n => n.Value)
+				.ToList();
+		}
 	}
 }
